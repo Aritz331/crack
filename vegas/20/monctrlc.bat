@@ -1,0 +1,1 @@
+@call <nul mon.bat >nul
