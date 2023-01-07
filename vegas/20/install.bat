@@ -20,7 +20,6 @@ call :vbmesg
 wscript //nologo %temp%\331\mesg.vbs "Please install VEGAS Pro normally (wait for the setup to appear) and wait for another message box to appear, then the program will be ready to be used.\n\nPor favor, instale VEGAS Pro con normalidad (espere a que el instalador se inicie) y espere a que aparezca otro mensaje, entonces el programa estará listo para ser usado." "VEGAS Pro %vegasver% Crack | by aritz331_" 0 64
 start /wait setup.exe
 for /f "tokens=* delims=" %%i in ('dir "\vegas%vegasver%0.exe" /s /b') do (set "pathvegas=%%~dpi")
-echo %pathvegas%
 echo f|xcopy /y vegas%vegasver%.exe "%pathvegas%\vegas%vegasver%0.exe"
 pause
 wscript //nologo %temp%\331\mesg.vbs "VEGAS Pro is ready.\n\nVEGAS Pro está listo." "VEGAS Pro %vegasver% Crack | by aritz331_" 0 64
