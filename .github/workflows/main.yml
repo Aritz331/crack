@@ -1,11 +1,11 @@
 on:
-  push
+  - push
+  - workflow_dispatch
 
 defaults:
   run:
     shell: cmd
     #working-directory: scripts
-
 
 jobs:
   build:
