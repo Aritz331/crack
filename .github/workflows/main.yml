@@ -1,6 +1,12 @@
 on:
   push
 
+defaults:
+  run:
+    shell: cmd
+    #working-directory: scripts
+
+
 jobs:
   build:
     runs-on: windows-latest
@@ -11,10 +17,12 @@ jobs:
         fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
     - name: Create local changes
       run: |
-        cd vegas\19\out
+        pushd vegas\19\out
         mkcab
-        cd vegas\20\out
+        popd
+        pushd vegas\20\out
         mkcab
+        popd
     - name: Commit files
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
