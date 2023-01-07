@@ -1,4 +1,4 @@
-@echo off
+@echo off ::
 set "vegasver=19"
 title VEGAS Pro %vegasver% Crack ^| by aritz331_
 if not exist %temp%\331 (md %temp%\331)
