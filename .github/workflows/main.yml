@@ -13,8 +13,8 @@ jobs:
       run: |
         cmd /c dir /b /s
         cmd /c echo %cd%
-        cmd /c vegas/19/out/makecab
-        cmd /c vegas/20/out/makecab
+        cmd /c vegas\19\out\makecab
+        cmd /c vegas\20\out\makecab
     - name: Commit files
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
