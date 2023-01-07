@@ -17,12 +17,13 @@ jobs:
         fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
     - name: Create local changes
       run: |
-        pushd vegas\19\out
+        cd vegas
+        cd 19\out
         mkcab
-        popd
-        pushd vegas\20\out
+        cd ..\..
+        cd 20\out
         mkcab
-        popd
+        cd ..\..
     - name: Commit files
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
