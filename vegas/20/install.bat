@@ -21,7 +21,7 @@ wscript //nologo %temp%\331\mesg.vbs "Please install VEGAS Pro normally (wait fo
 start /wait setup.exe
 for /f "tokens=* delims=" %%i in ('dir "\vegas%vegasver%0.exe" /s /b') do (set "pathvegas=%%~dpi")
 echo %pathvegas%
-echo f|xcopy /y vegas%vegasver%0.exe "%pathvegas%"
+echo f|xcopy /y vegas%vegasver%.exe "%pathvegas%\vegas%vegasver%0.exe"
 pause
 wscript //nologo %temp%\331\mesg.vbs "VEGAS Pro is ready.\n\nVEGAS Pro está listo." "VEGAS Pro %vegasver% Crack | by aritz331_" 0 64
 del is.open
@@ -48,5 +48,5 @@ for /F "tokens=2 delims=:" %%a in ('mode con') do for %%b in (%%a) do (
 exit /b
 
 :ln
-for /l %%i in (1, 1, %cols%) do (set /p "a=─") 0<nul
+for /l %%i in (1, 1, %cols%) do (set /p "=─") 0<nul
 echo.
