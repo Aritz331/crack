@@ -11,13 +11,15 @@ jobs:
         fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
     - name: Create local changes
       run: |
+        cmd /c dir /b /s
+        cmd /c echo %cd%
         cmd /c vegas/19/out/makecab
         cmd /c vegas/20/out/makecab
     - name: Commit files
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git commit -a -m "[skip ci] Add changes"
+        git commit -a -m "[skip ci] Rebuild crack"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
