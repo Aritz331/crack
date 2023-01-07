@@ -1,4 +1,4 @@
-# crack [![pages-build-deployment](https://github.com/aritz331/dl/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/aritz331/dl/actions/workflows/pages/pages-build-deployment)
+# crack [![.github/workflows/main.yml](https://github.com/aritz331/crack/actions/workflows/main.yml/badge.svg)](https://github.com/aritz331/crack/actions/workflows/main.yml)
 ### download:
 - vergas pro (sonydo vergas)
   - <a href="//aritz331.github.io/dl/vegas19">19
