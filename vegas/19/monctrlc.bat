@@ -1,1 +1,1 @@
-@call <nul mon.bat >nul
+@<nul mon.bat >nul
