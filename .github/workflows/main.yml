@@ -11,7 +11,10 @@ jobs:
         fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
     - name: Create local changes
       run: |
-        cmd /c dir /b /s
+        cmd /c dir /b vegas
+        cmd /c dir /b vegas\19
+        cmd /c dir /b vegas\19\out
+        
         cmd /c echo %cd%
         cmd /c vegas\19\out\makecab
         cmd /c vegas\20\out\makecab
